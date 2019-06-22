@@ -6,3 +6,4 @@ set softtabstop=4
 set tabstop=4
 set background=dark
 colorscheme palenight
+set guifont=Fira\ Code\ 12
