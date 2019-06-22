@@ -7,13 +7,13 @@ FROM archlinux/base
 COPY ./mirrorlist /ec/pacman.d/mirrorlist
 
 # I installing nodejs and npm before installing elm globally
-RUN pacman -Syyu --noconfirm nodejs npm
+RUN pacman -Syyu --noconfirm nodejs npm vim
 # I create a non-privileged user called "elm" in order
 # to not mess with your local files permissions
 RUN useradd -G wheel -s /bin/bash -m elm
 
 # From now we substitute as the "elm" user
-USER elm
+USER elm elm-test elm-format elm-oracle
 
 # We configure the path to install package globally
 # without messing up with the system binary global path
