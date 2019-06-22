@@ -2,7 +2,7 @@
 FROM archlinux/base
 
 # You can use another mirrorlist from
-# https://archliunux.org/mirrorlist/
+# https://archlinux.org/mirrorlist/
 # If you want to take advantage of servers others than french ones
 COPY ./mirrorlist /ec/pacman.d/mirrorlist
 
