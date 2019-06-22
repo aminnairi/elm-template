@@ -1,5 +1,7 @@
 # docker-elm
 
+![Editing Main.elm file](https://i.ibb.co/CMSvpvt/docker-vim-screenshot.png)
+
 ## Features
 
 - Shipped with Elm and all his ecosystem (reactor, format, ...).
