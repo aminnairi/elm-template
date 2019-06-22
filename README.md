@@ -67,7 +67,7 @@ module Main exposing (main)
 
 import Html exposing (Html)
 
-main : Html action
+main : Html Never
 main =
     Html.text "Hello world!"
 ```
