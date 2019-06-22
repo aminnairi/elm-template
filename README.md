@@ -12,6 +12,8 @@ $ git clone https://github.com/aminnairi/docker-elm my-elm-project
 
 ```console
 $ make init
+$ # or
+$ docker-compose run --rm elm init
 ```
 
 ### Add an existing Elm project
@@ -24,20 +26,26 @@ $ cp /path/to/my/existing/elm-project ./elm
 
 ```console
 $ make start
+$ # or
+$ docker-compose up --detach --build elm
 ```
 
 ### Stop the Elm web server
 
 ```console
 $ make stop
+$ # or
+$ docker-compose down
 ```
 
 ### Restart the Elm web server
 
 ```console
 $ make restart
-$ #or
+$ # or
 $ make stop start
+$ # or
+$ docker-compose down && docker-compose up --detach --build elm
 ```
 
 ### Run any Elm command from the Elm command line interface
