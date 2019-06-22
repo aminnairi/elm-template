@@ -59,7 +59,7 @@ Where `--version` is the argument you want to pass to the `elm` command line int
 ## Hello World in Elm example
 
 ```console
-touch ./elm/src/Main.elm
+$ touch ./elm/src/Main.elm
 ```
 
 ```elm
