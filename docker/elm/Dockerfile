@@ -26,7 +26,11 @@ RUN npm set prefix /home/elm/.local
 # We install elm and his ecosystem of packages globally for convenience
 RUN npm install --global elm elm-test elm-format elm-oracle
 
+# Installing the Elm plugin for Vim
 RUN git clone https://github.com/ElmCast/elm-vim.git /home/elm/.vim/pack/bundle/start/elm-vim
+
+# Installing the Palenight colorscheme for Vim
+RUN git clone https://github.com/drewtempelmeyer/palenight.vim /home/elm/.vim/pack/bundle/start/palenight
 
 # Vim custom setup to enhance DX
 COPY ./vim /home/elm/.vim/pack/bundle/start/vim
