@@ -13,7 +13,7 @@ RUN pacman -Syyu --noconfirm nodejs npm vim vim-ale git
 RUN useradd -G wheel -s /bin/bash -m elm
 
 # From now we substitute as the "elm" user
-USER elm elm-test elm-format elm-oracle
+USER elm
 
 # We configure the path to install package globally
 # without messing up with the system binary global path
@@ -23,8 +23,8 @@ ENV PATH=$PATH:/home/elm/.local/bin
 # path for global packages
 RUN npm set prefix /home/elm/.local
 
-# We install elm globally for convenience
-RUN npm install --global elm
+# We install elm and his ecosystem of packages globally for convenience
+RUN npm install --global elm elm-test elm-format elm-oracle
 
 # We expose the port 8000 for the elm server
 EXPOSE 8000
