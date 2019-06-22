@@ -77,6 +77,16 @@ $ make bash
 $ vim src/Main.elm
 ```
 
+## Manually format source-code
+
+```console
+$ make format
+$ # or
+$ docker-compose exec elm elm-format --yes src
+```
+
+Note: this is done automatically when saving edited files inside the container using `vim`.
+
 ## Hello World in Elm example
 
 ```console
