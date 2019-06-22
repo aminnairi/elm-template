@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  # docker-compose up -d elm (start the elm web server)
+  # docker-compose run --rm elm --help
+  # docker-compose run --rm elm ELM_COMMAND_HERE
+  elm:
+    user: elm
+    working_dir: /home/elm/src
+    build: docker/elm
+    volumes:
+      - ./elm:/home/elm/src
+    ports:
+      - 8000:8000
