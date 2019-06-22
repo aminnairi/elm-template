@@ -1,5 +1,13 @@
 # docker-elm
 
+## Features
+
+- Shipped with Elm and all his ecosystem (reactor, format, ...).
+- Vim configured for Elm with syntax highlighting, asynchronous code linting, autoformat on save.
+- Highly portable and only requires Docker & Docker Compose.
+- Does not requires Vim to be installed as it is living inside the container!
+- Everything you need to create your next Elm application. Just focus on your next idea and let me do the configuration!
+
 ## Installation
 
 ```console
@@ -55,6 +63,19 @@ $ doker-compose run --rm elm --version
 ```
 
 Where `--version` is the argument you want to pass to the `elm` command line interface.
+
+## Open a shell into the container
+
+```console
+$ make bash
+```
+
+## Edit files with Vim within the container
+
+```console
+$ make bash
+$ vim src/Main.elm
+```
 
 ## Hello World in Elm example
 
