@@ -55,3 +55,19 @@ $ doker-compose run --rm elm --version
 ```
 
 Where `--version` is the argument you want to pass to the `elm` command line interface.
+
+## Hello World in Elm example
+
+```console
+touch ./elm/src/Main.elm
+```
+
+```elm
+module Main exposing (main)
+
+import Html exposing (Html)
+
+main : Html action
+main =
+    Html.text "Hello world!"
+```
