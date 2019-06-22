@@ -22,7 +22,7 @@ $ docker-compose run --rm elm init
 $ cp /path/to/my/existing/elm-project ./elm
 ```
 
-### Start the Elm web server
+### Start the Elm web server at http://localhost:8000/
 
 ```console
 $ make start
