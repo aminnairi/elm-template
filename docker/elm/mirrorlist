@@ -1,0 +1,39 @@
+##
+## Arch Linux repository mirrorlist
+## Filtered by mirror score from mirror status page
+## Generated on 2019-06-22
+##
+
+# Go to https://archlinux.org/mirrorlist to build your own
+# mirror list and replace this one! Or use this one
+# if you live in France
+
+Server = http://mirrors.standaloneinstaller.com/archlinux/$repo/os/$arch
+Server = https://mirrors.phx.ms/arch/$repo/os/$arch
+Server = https://mirror.thekinrar.fr/archlinux/$repo/os/$arch
+Server = http://archlinux.polymorf.fr/$repo/os/$arch
+Server = http://archlinux.mirrors.ovh.net/archlinux/$repo/os/$arch
+Server = http://mirror.archlinux.ikoula.com/archlinux/$repo/os/$arch
+Server = http://archlinux.vi-di.fr/$repo/os/$arch
+Server = http://mirrors.celianvdb.fr/archlinux/$repo/os/$arch
+Server = http://archlinux.mirrors.benatherton.com/$repo/os/$arch
+Server = http://mirror.lastmikoi.net/archlinux/$repo/os/$arch
+Server = https://mirrors.celianvdb.fr/archlinux/$repo/os/$arch
+Server = http://ftp.u-strasbg.fr/linux/distributions/archlinux/$repo/os/$arch
+Server = https://mirror.oldsql.cc/archlinux/$repo/os/$arch
+Server = http://mir.archlinux.fr/$repo/os/$arch
+Server = http://mirrors.arnoldthebat.co.uk/archlinux/$repo/os/$arch
+Server = http://arch.nimukaito.net/$repo/os/$arch
+Server = http://mirrors.phx.ms/arch/$repo/os/$arch
+Server = http://mirror.cyberbits.eu/archlinux/$repo/os/$arch
+Server = http://mirror.ibcp.fr/pub/archlinux/$repo/os/$arch
+Server = https://mirror.wormhole.eu/archlinux/$repo/os/$arch
+Server = http://mirror.oldsql.cc/archlinux/$repo/os/$arch
+Server = https://mirrors.arnoldthebat.co.uk/archlinux/$repo/os/$arch
+Server = https://archlinux.mailtunnel.eu/$repo/os/$arch
+Server = http://archlinux.mailtunnel.eu/$repo/os/$arch
+Server = https://archlinux.vi-di.fr/$repo/os/$arch
+Server = https://arch-mirror.cloud.louifox.house/$repo/os/$arch
+Server = http://archlinux.de-labrusse.fr/$repo/os/$arch
+Server = https://mirror.cyberbits.eu/archlinux/$repo/os/$arch
+Server = https://arch.nimukaito.net/$repo/os/$arch
