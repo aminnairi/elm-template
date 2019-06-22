@@ -19,3 +19,6 @@ init:
 
 bash:
 	docker-compose exec elm bash
+
+format:
+	docker-compose exec elm elm-format --yes src
