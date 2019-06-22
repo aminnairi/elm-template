@@ -26,6 +26,8 @@ RUN npm set prefix /home/elm/.local
 # We install elm and his ecosystem of packages globally for convenience
 RUN npm install --global elm elm-test elm-format elm-oracle
 
+RUN git clone https://github.com/ElmCast/elm-vim.git /home/elm/.vim/pack/bundle/start/elm-vim
+
 # We expose the port 8000 for the elm server
 EXPOSE 8000
 
