@@ -12,9 +12,10 @@
 - Everything you need to create your next Elm application. Just focus on your next idea and let me do the configuration!
 
 ## Requirements
+- [Git][git]
 - [Docker][docker]
 - [Docker Compose][dockercompose]
-- [GNU/Make](https://www.gnu.org/software/make/) (optional)
+- [GNU/Make][gnumake] (optional)
 
 ## Installation
 
@@ -125,6 +126,7 @@ main =
 
 ## Many thanks to
 
+- [Git][git]
 - [Airline](https://github.com/vim-airline/vim-airline)
 - [Archlinux](https://www.archlinux.org/)
 - [CtrlP](https://github.com/ctrlpvim/ctrlp.vim)
@@ -133,6 +135,7 @@ main =
 - [Elm](https://github.com/elm)
 - [Fira Code](https://github.com/tonsky/FiraCode)
 - [Fugitive](https://github.com/tpope/vim-fugitive)
+- [GNU/Make][gnumake]
 - [Git Gutter](https://github.com/airblade/vim-gitgutter)
 - [NERDTree](https://github.com/scrooloose/nerdtree)
 - [NPM](https://github.com/npm)
@@ -143,3 +146,5 @@ main =
 
 [docker]: https://www.docker.com/
 [dockercompose]: https://docs.docker.com/compose/
+[gnumake]: https://www.gnu.org/software/make/
+[git]: https://git-scm.com/
