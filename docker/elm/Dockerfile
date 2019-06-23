@@ -7,10 +7,10 @@ FROM archlinux/base
 COPY ./mirrorlist /ec/pacman.d/mirrorlist
 
 # I installing nodejs and npm before installing elm globally
-RUN pacman -Syyu --noconfirm nodejs npm vim vim-ale git ttf-fira-code
+RUN pacman -Syyu --noconfirm nodejs npm vim vim-ale git ttf-fira-code zsh
 # I create a non-privileged user called "elm" in order
 # to not mess with your local files permissions
-RUN useradd -G wheel -s /bin/bash -m elm
+RUN useradd -G wheel -s /bin/zsh -m elm
 
 # From now we substitute as the "elm" user
 USER elm
@@ -31,6 +31,9 @@ RUN git clone https://github.com/ElmCast/elm-vim.git /home/elm/.vim/pack/bundle/
 
 # Installing the Palenight colorscheme for Vim
 RUN git clone https://github.com/drewtempelmeyer/palenight.vim /home/elm/.vim/pack/bundle/start/palenight
+
+# Installing OhMyZSH for the Elm user
+RUN curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | bash -
 
 # Vim custom setup to enhance DX
 COPY ./vim /home/elm/.vim/pack/bundle/start/vim
