@@ -67,20 +67,20 @@ $ doker-compose run --rm elm --version
 
 Where `--version` is the argument you want to pass to the `elm` command line interface.
 
-## Open a shell into the container
+### Open a shell into the container
 
 ```console
 $ make shell
 ```
 
-## Edit files with Vim within the container
+### Edit files with Vim within the container
 
 ```console
 $ make shell
 $ vim src/Main.elm
 ```
 
-## Manually format source-code
+### Manually format source-code
 
 ```console
 $ make format
