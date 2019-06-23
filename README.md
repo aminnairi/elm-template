@@ -5,7 +5,7 @@
 ## Features
 
 - Shipped with Elm and all his ecosystem (reactor, format, ...).
-- Vim configured for Elm with syntax highlighting, asynchronous code linting, autoformat on save.
+- Vim configured for Elm with syntax highlighting, asynchronous code linting, autoformat on save, fuzzy file matcher & tree viewer.
 - Highly portable and only requires Docker & Docker Compose.
 - Does not requires Vim to be installed as it is living inside the container!
 - Everything you need to create your next Elm application. Just focus on your next idea and let me do the configuration!
