@@ -1,6 +1,7 @@
 # docker-elm
 
-![Editing Main.elm file](https://i.ibb.co/Dgp9zWP/docker-elm-screenshot.png)
+![Editing Main.elm file](https://i.ibb.co/J7CXtnk/docker-elm-screen.png)
+
 
 ## Features
 
