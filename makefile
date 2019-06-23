@@ -1,4 +1,4 @@
-.PHONY: init start stop restart
+.PHONY: init start stop restart shell format
 
 # make start (run the wev server)
 start:
@@ -17,8 +17,8 @@ restart: stop start
 init:
 	docker-compose run --rm elm init
 
-bash:
-	docker-compose exec elm bash
+shell:
+	docker-compose exec elm zsh
 
 format:
 	docker-compose exec elm elm-format --yes src
