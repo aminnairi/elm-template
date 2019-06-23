@@ -12,10 +12,10 @@
 - Everything you need to create your next Elm application. Just focus on your next idea and let me do the configuration!
 
 ## Requirements
-- [Git][git]
-- [Docker][docker]
 - [Docker Compose][dockercompose]
+- [Docker][docker]
 - [GNU/Make][gnumake] (optional)
+- [Git][git]
 
 ## Installation
 
@@ -126,7 +126,6 @@ main =
 
 ## Many thanks to
 
-- [Git][git]
 - [Airline](https://github.com/vim-airline/vim-airline)
 - [Archlinux](https://www.archlinux.org/)
 - [CtrlP](https://github.com/ctrlpvim/ctrlp.vim)
@@ -137,6 +136,7 @@ main =
 - [Fugitive](https://github.com/tpope/vim-fugitive)
 - [GNU/Make][gnumake]
 - [Git Gutter](https://github.com/airblade/vim-gitgutter)
+- [Git][git]
 - [NERDTree](https://github.com/scrooloose/nerdtree)
 - [NPM](https://github.com/npm)
 - [Node.js](https://github.com/nodejs)
