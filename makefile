@@ -27,4 +27,4 @@ format:
 
 # make build (transpile the main file "src/Main.elm" into "dist/elm.js" )
 build:
-	docker-compose run --rm elm make --output dist/elm.js src/Main.elm
+	docker-compose run --rm elm make --optimize --output dist/elm.js src/Main.elm
