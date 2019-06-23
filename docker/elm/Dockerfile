@@ -6,7 +6,7 @@ FROM archlinux/base
 # If you want to take advantage of servers others than french ones
 COPY ./mirrorlist /ec/pacman.d/mirrorlist
 
-# I installing nodejs and npm before installing elm globally
+# I installing a bunch of tools for a better DX before installing elm globally
 RUN pacman -Syyu --noconfirm nodejs npm vim vim-ale git ttf-fira-code zsh gawk
 # I create a non-privileged user called "elm" in order
 # to not mess with your local files permissions
