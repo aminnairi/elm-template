@@ -71,12 +71,14 @@ Where `--version` is the argument you want to pass to the `elm` command line int
 
 ```console
 $ make shell
+$ # or
+$ docker-compose exec elm zsh
 ```
 
 ### Edit files with Vim within the container
 
 ```console
-$ make shell
+$ make shell # or docker-compose exec elm zsh
 $ vim src/Main.elm
 ```
 
@@ -94,6 +96,8 @@ Note: this is done automatically when saving edited files inside the container u
 
 ```console
 $ make build
+$ # or
+$ docker-compose run --rm elm make --optimize --output=dist/elm.js
 ```
 
 Note: this will generate a file called `elm.js` under the `elm/dist` folder.
