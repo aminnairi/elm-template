@@ -70,13 +70,13 @@ Where `--version` is the argument you want to pass to the `elm` command line int
 ## Open a shell into the container
 
 ```console
-$ make bash
+$ make shell
 ```
 
 ## Edit files with Vim within the container
 
 ```console
-$ make bash
+$ make shell
 $ vim src/Main.elm
 ```
 
