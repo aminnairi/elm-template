@@ -11,6 +11,11 @@
 - Does not requires Vim to be installed as it is living inside the container!
 - Everything you need to create your next Elm application. Just focus on your next idea and let me do the configuration!
 
+## Requirements
+- [Docker][docker]
+- [Docker Compose][dockercompose]
+- [GNU/Make](https://www.gnu.org/software/make/) (optional)
+
 ## Installation
 
 ```console
@@ -123,8 +128,8 @@ main =
 - [Airline](https://github.com/vim-airline/vim-airline)
 - [Archlinux](https://www.archlinux.org/)
 - [CtrlP](https://github.com/ctrlpvim/ctrlp.vim)
-- [Docker Compose](https://docs.docker.com/compose/)
-- [Docker](https://www.docker.com/)
+- [Docker Compose][dockercompose]
+- [Docker][docker]
 - [Elm](https://github.com/elm)
 - [Fira Code](https://github.com/tonsky/FiraCode)
 - [Fugitive](https://github.com/tpope/vim-fugitive)
@@ -134,3 +139,7 @@ main =
 - [Node.js](https://github.com/nodejs)
 - [Oh My ZSH](https://github.com/robbyrussell/oh-my-zsh)
 - [Vim](https://github.com/vim)
+
+
+[docker]: https://www.docker.com/
+[dockercompose]: https://docs.docker.com/compose/
