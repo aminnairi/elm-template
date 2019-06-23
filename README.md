@@ -110,7 +110,7 @@ main =
 
 - [Elm](https://github.com/elm)
 - [Vim](https://github.com/vim)
-- [Docker] (https://www.docker.com/)
+- [Docker](https://www.docker.com/)
 - [Docker Compose](https://docs.docker.com/compose/)
 - [Archlinux](https://www.archlinux.org/)
 - [NPM](https://github.com/npm)
