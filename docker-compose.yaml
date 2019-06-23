@@ -4,6 +4,8 @@ services:
   # docker-compose up -d elm (start the elm web server)
   # docker-compose run --rm elm --help
   # docker-compose run --rm elm ELM_COMMAND_HERE
+  # docker-compose exec elm elm-format
+  # docker-compose exec elm any-linux-command
   elm:
     user: elm
     working_dir: /home/elm/src
