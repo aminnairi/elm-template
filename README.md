@@ -105,3 +105,20 @@ main : Html Never
 main =
     Html.text "Hello world!"
 ```
+
+## Many thanks to
+
+- [Elm](https://github.com/elm)
+- [Vim](https://github.com/vim)
+- [Docker] (https://www.docker.com/)
+- [Docker Compose](https://docs.docker.com/compose/)
+- [Archlinux](https://www.archlinux.org/)
+- [NPM](https://github.com/npm)
+- [Node.js](https://github.com/nodejs)
+- [Fira Code](https://github.com/tonsky/FiraCode)
+- [Oh My ZSH](https://github.com/robbyrussell/oh-my-zsh)
+- [NERDTree](https://github.com/scrooloose/nerdtree)
+- [CtrlP](https://github.com/ctrlpvim/ctrlp.vim)
+- [Airline](https://github.com/vim-airline/vim-airline)
+- [Git Gutter](https://github.com/airblade/vim-gitgutter)
+- [Fugitive](https://github.com/tpope/vim-fugitive)
