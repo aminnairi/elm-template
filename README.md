@@ -47,7 +47,7 @@ $ # or
 $ docker-compose up --detach --build elm
 ```
 
-### :stop: Stop the Elm web server
+### :octagonal_sign: Stop the Elm web server
 
 ```console
 $ make stop
