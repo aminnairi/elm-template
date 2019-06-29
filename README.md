@@ -3,7 +3,7 @@
 ![Editing Main.elm file](https://i.ibb.co/J7CXtnk/docker-elm-screen.png)
 
 
-## Features
+## :sparkles: Features
 
 - Shipped with Elm and all his ecosystem (reactor, format, ...).
 - Vim configured for Elm with syntax highlighting, asynchronous code linting, autoformat on save, fuzzy file matcher & tree viewer.
@@ -11,21 +11,21 @@
 - Does not requires Vim to be installed as it is living inside the container!
 - Everything you need to create your next Elm application. Just focus on your next idea and let me do the configuration!
 
-## Requirements
+## :pencil2: Requirements
 - [Docker Compose][dockercompose]
 - [Docker][docker]
 - [GNU/Make][gnumake] (optional)
 - [Git][git]
 
-## Installation
+## :rocket: Installation
 
 ```console
 $ git clone https://github.com/aminnairi/docker-elm my-elm-project
 ```
 
-## Usage
+## :construction_worker: Usage
 
-### Initialize a brand new Elm project
+### :tada: Initialize a brand new Elm project
 
 ```console
 $ make init
@@ -33,13 +33,13 @@ $ # or
 $ docker-compose run --rm elm init
 ```
 
-### Add an existing Elm project
+### :heavy_plus_sign: Add an existing Elm project
 
 ```console
 $ cp /path/to/my/existing/elm-project ./elm
 ```
 
-### Start the Elm web server at http://localhost:8000/
+### :rocket: Start the Elm web server at http://localhost:8000/
 
 ```console
 $ make start
@@ -47,7 +47,7 @@ $ # or
 $ docker-compose up --detach --build elm
 ```
 
-### Stop the Elm web server
+### :octogonal_sign: Stop the Elm web server
 
 ```console
 $ make stop
@@ -55,7 +55,7 @@ $ # or
 $ docker-compose down
 ```
 
-### Restart the Elm web server
+### :recycle: Restart the Elm web server
 
 ```console
 $ make restart
@@ -65,7 +65,7 @@ $ # or
 $ docker-compose down && docker-compose up --detach --build elm
 ```
 
-### Run any Elm command from the Elm command line interface
+### :robot: Run any Elm command from the Elm command line interface
 
 ```console
 $ doker-compose run --rm elm --version
@@ -73,7 +73,7 @@ $ doker-compose run --rm elm --version
 
 Where `--version` is the argument you want to pass to the `elm` command line interface.
 
-### Open a shell into the container
+### :shell: Open a shell into the container
 
 ```console
 $ make shell
@@ -81,14 +81,14 @@ $ # or
 $ docker-compose exec elm zsh
 ```
 
-### Edit files with Vim within the container
+### :pencil2: Edit files with Vim within the container
 
 ```console
 $ make shell # or docker-compose exec elm zsh
 $ vim src/Main.elm
 ```
 
-### Manually format source-code
+### :art: Manually format source-code
 
 ```console
 $ make format
@@ -98,7 +98,7 @@ $ docker-compose exec elm elm-format --yes src
 
 Note: this is done automatically when saving edited files inside the container using `vim`.
 
-### Build the Elm application
+### :package: Build the Elm application
 
 ```console
 $ make build
@@ -108,7 +108,7 @@ $ docker-compose run --rm elm make --optimize --output=dist/elm.js
 
 Note: this will generate a file called `elm.js` under the `elm/dist` folder.
 
-## Hello World in Elm example
+## :wave: Hello World in Elm example
 
 ```console
 $ touch ./elm/src/Main.elm
@@ -124,7 +124,7 @@ main =
     Html.text "Hello world!"
 ```
 
-## Many thanks to
+## :pray: Many thanks to
 
 - [Airline](https://github.com/vim-airline/vim-airline)
 - [Archlinux](https://www.archlinux.org/)
