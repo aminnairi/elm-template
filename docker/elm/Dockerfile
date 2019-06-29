@@ -4,7 +4,7 @@ FROM archlinux/base
 # You can use another mirrorlist from
 # https://archlinux.org/mirrorlist/
 # If you want to take advantage of servers others than french ones
-COPY ./mirrorlist /ec/pacman.d/mirrorlist
+COPY ./mirrorlist /etc/pacman.d/mirrorlist
 
 # I installing a bunch of tools for a better DX before installing elm globally
 RUN pacman -Syy --noconfirm glibc nodejs npm vim vim-ale git ttf-fira-code zsh gawk vim-nerdtree vim-ctrlp vim-airline vim-gitgutter vim-fugitive
