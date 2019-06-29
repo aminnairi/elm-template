@@ -7,7 +7,8 @@ FROM archlinux/base
 COPY ./mirrorlist /etc/pacman.d/mirrorlist
 
 # I install a bunch of tools for a better DX before installing elm globally
-RUN pacman -Syy --noconfirm glibc nodejs npm vim vim-ale git ttf-fira-code zsh gawk vim-nerdtree vim-ctrlp vim-airline vim-gitgutter vim-fugitive
+RUN pacman -Syy --noconfirm glibc nodejs npm vim vim-ale git ttf-fira-code \
+    zsh gawk vim-nerdtree vim-ctrlp vim-airline vim-gitgutter vim-fugitive
 # I create a non-privileged user called "elm" in order
 # to not mess with your local files permissions
 RUN useradd -G wheel -s /bin/zsh -m elm
@@ -27,13 +28,20 @@ RUN npm set prefix /home/elm/.local
 RUN npm install --global elm elm-test elm-format elm-oracle
 
 # Installing the Elm plugin for Vim
-RUN git clone https://github.com/ElmCast/elm-vim.git /home/elm/.vim/pack/bundle/start/elm-vim
+RUN git clone \
+    https://github.com/ElmCast/elm-vim.git \
+    /home/elm/.vim/pack/bundle/start/elm-vim
 
 # Installing the Palenight colorscheme for Vim
-RUN git clone https://github.com/drewtempelmeyer/palenight.vim /home/elm/.vim/pack/bundle/start/palenight
+RUN git \
+    clone https://github.com/drewtempelmeyer/palenight.vim \
+    /home/elm/.vim/pack/bundle/start/palenight
 
 # Installing OhMyZSH for the Elm user
-RUN curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | bash -
+RUN curl \
+    -fsSL \
+    https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh \
+    | bash -
 
 # Vim custom setup to enhance DX
 COPY ./vim /home/elm/.vim/pack/bundle/start/vim
