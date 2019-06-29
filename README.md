@@ -124,6 +124,10 @@ main =
     Html.text "Hello world!"
 ```
 
+*New to Elm? I strongly advised you follow the
+[Elm Bridge Curriculum](https://elmbridge.github.io/curriculum/) to get along
+with the language in no time!*
+
 ## :pray: Many thanks to
 
 - [Airline](https://github.com/vim-airline/vim-airline)
