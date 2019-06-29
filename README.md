@@ -6,10 +6,15 @@
 ## :sparkles: Features
 
 - Shipped with Elm and all his ecosystem (reactor, format, ...).
-- Vim configured for Elm with syntax highlighting, asynchronous code linting, autoformat on save, fuzzy file matcher & tree viewer.
-- Highly portable and only requires Docker & Docker Compose.
+- Vim configured for Elm with syntax highlighting, asynchronous code linting,
+autoformat on save, fuzzy file matcher & tree viewer.
 - Does not requires Vim to be installed as it is living inside the container!
-- Everything you need to create your next Elm application. Just focus on your next idea and let me do the configuration!
+- Not confortable with Vim? No problem! I got you covered. You can easily
+launch you favorite editor to change files in this architecture, just like
+with any other project of yours!
+- Highly portable and only requires Docker & Docker Compose.
+- Everything you need to create your next Elm application. Just focus on your
+next idea and let me do the configuration!
 
 ## :pencil2: Requirements
 - [Docker Compose][dockercompose]
@@ -71,7 +76,8 @@ $ docker-compose down && docker-compose up --detach --build elm
 $ doker-compose run --rm elm --version
 ```
 
-Where `--version` is the argument you want to pass to the `elm` command line interface.
+Where `--version` is the argument you want to pass to the `elm` command line
+interface.
 
 ### :shell: Open a shell into the container
 
@@ -96,7 +102,8 @@ $ # or
 $ docker-compose exec elm elm-format --yes src
 ```
 
-Note: this is done automatically when saving edited files inside the container using `vim`.
+Note: this is done automatically when saving edited files inside the container
+using `vim`.
 
 ### :package: Build the Elm application
 
