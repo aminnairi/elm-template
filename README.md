@@ -71,9 +71,11 @@ $ docker-compose run --rm shell
 ### :pencil2: Edit files with Vim within the container
 
 ```console
-$ make vim
+$ make shell
+$ vim
 $ # or
-$ dokcer-compose run --rm vim
+$ dokcer-compose run --rm shell
+$ vim
 ```
 
 ### :art: Manually format source-code
@@ -81,7 +83,7 @@ $ dokcer-compose run --rm vim
 ```console
 $ make format
 $ # or
-$ docker-compose run elm-format --yes src
+$ docker-compose run --rm elm-format --yes src
 ```
 
 Note: this is done automatically when saving edited files inside the container
