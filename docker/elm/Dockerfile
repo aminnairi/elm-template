@@ -46,9 +46,8 @@ RUN curl \
 # Vim custom setup to enhance DX
 COPY ./vim /home/elm/.vim/pack/bundle/start/vim
 
+# Sets the current directory
+WORKDIR /home/elm/src
+
 # We expose the port 8000 for the elm server
 EXPOSE 8000
-
-ENTRYPOINT [ "elm" ]
-
-CMD [ "reactor" ]
