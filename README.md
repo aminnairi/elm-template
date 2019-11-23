@@ -1,6 +1,6 @@
 # docker-elm
 
-![Editing Main.elm file](https://i.ibb.co/J7CXtnk/docker-elm-screen.png)
+![Editing Elm source file](https://i.ibb.co/wSXQwH4/elm-template-banner.png)
 
 ## :sparkles: Features
 
