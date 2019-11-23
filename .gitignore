@@ -1,0 +1,5 @@
+# Elm temporary files (artifacts)
+/elm-stuff
+
+# Node.js dependencies
+/node_modules

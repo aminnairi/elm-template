@@ -1,0 +1,13 @@
+{
+    "private": true,
+    "scripts": {
+        "development": "rollup --environment NODE_ENV:development --config rollup.config.js --watch",
+        "production": "rollup --environment NODE_ENV:production --config rollup.config.js"
+    },
+    "devDependencies": {
+        "rollup": "^1.27.4",
+        "rollup-plugin-elm": "^2.0.1",
+        "rollup-plugin-livereload": "^1.0.4",
+        "rollup-plugin-serve": "^1.0.1"
+    }
+}
