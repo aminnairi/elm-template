@@ -2,7 +2,6 @@
 
 ![Editing Main.elm file](https://i.ibb.co/J7CXtnk/docker-elm-screen.png)
 
-
 ## :sparkles: Features
 
 - Shipped with Elm and all his ecosystem (reactor, format, ...).
@@ -15,6 +14,12 @@ with any other project of yours!
 - Highly portable and only requires Docker & Docker Compose.
 - Everything you need to create your next Elm application. Just focus on your
 next idea and let me do the configuration!
+- Configured with Rollup to let you leverage all the HTML, CSS & JavaScript ecosystem's tools while still using the power of Elm.
+- Development environment with a server and live reloading as you scale your applicaton to help you focus on your next big thing instead of the tooling.
+
+*New to Elm? I strongly advised you follow the
+[Elm Bridge Curriculum](https://elmbridge.github.io/curriculum/) to get along
+with the language in no time!*
 
 ## :pencil2: Requirements
 - [Docker Compose][dockercompose]
@@ -44,7 +49,7 @@ $ docker-compose run --rm elm init
 $ cp /path/to/my/existing/elm-project ./elm
 ```
 
-### :rocket: Start the Elm web server at http://localhost:8000/
+### :whale: Start the containers
 
 ```console
 $ make start
@@ -52,7 +57,15 @@ $ # or
 $ docker-compose up --detach --build elm
 ```
 
-### :raised_hand: Stop the Elm web server
+### :rocket: Start the development server at `localhost:8000`
+
+```console
+$ make development
+$ # or
+$ docker-compose exec elm npm run development
+```
+
+### :raised_hand: Stop the containers
 
 ```console
 $ make stop
@@ -60,7 +73,7 @@ $ # or
 $ docker-compose down
 ```
 
-### :recycle: Restart the Elm web server
+### :recycle: Restart the containers
 
 ```console
 $ make restart
@@ -91,7 +104,7 @@ $ docker-compose exec elm zsh
 
 ```console
 $ make shell # or docker-compose exec elm zsh
-$ vim src/Main.elm
+$ vim
 ```
 
 ### :art: Manually format source-code
@@ -108,32 +121,13 @@ using `vim`.
 ### :package: Build the Elm application
 
 ```console
-$ make build
+$ make production
 $ # or
-$ docker-compose run --rm elm make --optimize --output=dist/elm.js
+$ docker-compose exec node npm run development
 ```
 
-Note: this will generate a file called `elm.js` under the `elm/dist` folder.
+Note: this will generate a file called `main.js` under the `public` folder.
 
-## :wave: Hello World in Elm example
-
-```console
-$ touch ./elm/src/Main.elm
-```
-
-```elm
-module Main exposing (main)
-
-import Html exposing (Html)
-
-main : Html Never
-main =
-    Html.text "Hello world!"
-```
-
-*New to Elm? I strongly advised you follow the
-[Elm Bridge Curriculum](https://elmbridge.github.io/curriculum/) to get along
-with the language in no time!*
 
 ## :pray: Many thanks to
 
@@ -153,7 +147,6 @@ with the language in no time!*
 - [Node.js](https://github.com/nodejs)
 - [Oh My ZSH](https://github.com/robbyrussell/oh-my-zsh)
 - [Vim](https://github.com/vim)
-
 
 [docker]: https://www.docker.com/
 [dockercompose]: https://docs.docker.com/compose/
