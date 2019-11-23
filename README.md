@@ -33,55 +33,23 @@ with the language in no time!*
 $ git clone https://github.com/aminnairi/docker-elm my-elm-project
 ```
 
-## :construction_worker: Usage
-
-### :tada: Initialize a brand new Elm project
+### :floppy_disk: Install the dependencies
 
 ```console
-$ make init
+$ make install
 $ # or
-$ docker-compose run --rm elm init
+$ docker-compose run --rm npm install
 ```
 
-### :heavy_plus_sign: Add an existing Elm project
-
-```console
-$ cp /path/to/my/existing/elm-project ./elm
-```
-
-### :whale: Start the containers
-
-```console
-$ make start
-$ # or
-$ docker-compose up --detach --build elm
-```
-
-### :rocket: Start the development server at `localhost:8000`
+### :rocket: Start the development server
 
 ```console
 $ make development
 $ # or
-$ docker-compose exec elm npm run development
+$ docker-compose run --rm npm run development
 ```
 
-### :raised_hand: Stop the containers
-
-```console
-$ make stop
-$ # or
-$ docker-compose down
-```
-
-### :recycle: Restart the containers
-
-```console
-$ make restart
-$ # or
-$ make stop start
-$ # or
-$ docker-compose down && docker-compose up --detach --build elm
-```
+*Note: the development server will be available at [`localhost:8000`](http://localhost:8000)*
 
 ### :robot: Run any Elm command from the Elm command line interface
 
@@ -97,14 +65,15 @@ interface.
 ```console
 $ make shell
 $ # or
-$ docker-compose exec elm zsh
+$ docker-compose run --rm shell
 ```
 
 ### :pencil2: Edit files with Vim within the container
 
 ```console
-$ make shell # or docker-compose exec elm zsh
-$ vim
+$ make vim
+$ # or
+$ dokcer-compose run --rm vim
 ```
 
 ### :art: Manually format source-code
@@ -112,18 +81,18 @@ $ vim
 ```console
 $ make format
 $ # or
-$ docker-compose exec elm elm-format --yes src
+$ docker-compose run elm-format --yes src
 ```
 
 Note: this is done automatically when saving edited files inside the container
-using `vim`.
+using `make vim`.
 
 ### :package: Build the Elm application
 
 ```console
 $ make production
 $ # or
-$ docker-compose exec node npm run development
+$ docker-compose run --rm npm run development
 ```
 
 Note: this will generate a file called `main.js` under the `public` folder.
