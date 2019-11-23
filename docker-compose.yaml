@@ -1,16 +1,19 @@
 version: '3'
 
 services:
-  # docker-compose up -d elm (start the elm web server)
-  # docker-compose run --rm elm --help
-  # docker-compose run --rm elm ELM_COMMAND_HERE
-  # docker-compose exec elm elm-format
-  # docker-compose exec elm any-linux-command
-  elm:
-    user: elm
-    working_dir: /home/elm/src
-    build: docker/elm
-    volumes:
-      - .:/home/elm/src
-    ports:
-      - 8000:8000
+    elm:
+        # Open a shell environment
+        tty: true
+        # Keeps the standard input open for sending over commands afterwards
+        stdin_open: true
+        # Nicer name for the container
+        container_name: elm
+        # Use the following image for this container
+        build: docker/elm
+        # Volumes mapped to the container
+        volumes:
+            - .:/home/elm/src
+        # Ports forwarded to the container
+        ports:
+            - 8000:8000
+            - 35729:35729
