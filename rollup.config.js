@@ -1,6 +1,8 @@
 "use strict"
 
 import { resolve } from "path"
+import { terser } from "rollup-plugin-terser"
+import { cpus } from "os"
 
 import serve from "rollup-plugin-serve"
 import livereload from "rollup-plugin-livereload"
@@ -46,6 +48,9 @@ export default {
             verbose: true,
             // Port where to listen for livereload changes
             port: 35729
+        }),
+        process.env.NODE_ENV === "production" && terser({
+            numWorkers: cpus().length
         })
     ],
 
