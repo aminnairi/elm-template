@@ -1,30 +1,40 @@
-.PHONY: init start stop restart shell format
+.PHONY: install start stop restart development production shell format
 
-# make start (run the wev server)
+# make install
+install:
+	# this will install all dependencies listed in our package.json file
+	docker-compose run elm npm install
+
+# make start
 start:
-	rm -rf ./elm/elm-stuff
-	docker-compose up --detach --build elm
+	# starting our containers in the background
+	docker-compose up --detach --build
 
-# make stop (stop the container)
+# make stop 
 stop:
-	docker-compose down
+	# stop containers, removes orphans & local images & removes volumes
+	docker-compose down --rmi local --remove-orphans --volumes
 
 # make restart (restart the container)
 # make stop start (equivalent)
 restart: stop start
 
-# make init (initialize a new Elm project under the "elm" folder)
-init:
-	docker-compose run --rm elm init
+# make development
+development:
+	# run the development server
+	docker-compose exec elm npm run development
 
-# make shell (open a GNU/Linux shell into the container)
+# make production
+production:
+	# transpile the main file "src/main.js" into "public/main.js"
+	docker-compose exec elm npm run production
+
+# make shell
 shell:
+	# open a GNU/Linux shell into the container
 	docker-compose exec elm zsh
 
-# make format (format all files under the "src" folder)
+# make format
 format:
+	# format all files under the "src" folder
 	docker-compose exec elm elm-format --yes src
-
-# make build (transpile the main file "src/Main.elm" into "dist/elm.js" )
-build:
-	docker-compose run --rm elm make --optimize --output dist/elm.js src/Main.elm
