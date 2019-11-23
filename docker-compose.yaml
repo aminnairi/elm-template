@@ -1,19 +1,52 @@
 version: '3'
 
 services:
-    elm:
-        # Open a shell environment
-        tty: true
-        # Keeps the standard input open for sending over commands afterwards
-        stdin_open: true
+    shell:
         # Nicer name for the container
-        container_name: elm
+        container_name: shell
+        entrypoint: zsh
         # Use the following image for this container
         build: docker/elm
         # Volumes mapped to the container
         volumes:
             - .:/home/elm/src
-        # Ports forwarded to the container
-        ports:
-            - 8000:8000
-            - 35729:35729
+
+    vim:
+        # Nicer name for the container
+        container_name: vim
+        entrypoint: vim
+        # Use the following image for this container
+        build: docker/elm
+        # Volumes mapped to the container
+        volumes:
+            - .:/home/elm/src
+
+    elm:
+        # Nicer name for the container
+        container_name: elm
+        entrypoint: elm
+        # Use the following image for this container
+        build: docker/elm
+        # Volumes mapped to the container
+        volumes:
+            - .:/home/elm/src
+
+    elm-format:
+        # Nicer name for the container
+        container_name: elm-format
+        entrypoint: elm-format
+        # Use the following image for this container
+        build: docker/elm
+        # Volumes mapped to the container
+        volumes:
+            - .:/home/elm/src
+
+    npm:
+        # Nicer name for the container
+        container_name: npm
+        entrypoint: npm
+        # Use the following image for this container
+        build: docker/elm
+        # Volumes mapped to the container
+        volumes:
+            - .:/home/elm/src
