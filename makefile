@@ -8,7 +8,7 @@ install:
 # make development
 development:
 	# run the development server
-	docker-compose run --rm npm run development
+	docker-compose run --rm --service-ports npm run development
 
 # make production
 production:
