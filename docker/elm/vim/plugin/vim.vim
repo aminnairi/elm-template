@@ -9,6 +9,7 @@ set background=dark
 colorscheme palenight
 set guifont=Fira\ Code\ 12
 set encoding=UTF-8
+set nowrap
 
 " NERDTree specific rules
 autocmd vimenter * NERDTree
