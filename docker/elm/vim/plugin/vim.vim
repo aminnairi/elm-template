@@ -8,6 +8,7 @@ set tabstop=4
 set background=dark
 colorscheme palenight
 set guifont=Fira\ Code\ 12
+set encoding=UTF-8
 
 " NERDTree specific rules
 autocmd vimenter * NERDTree
