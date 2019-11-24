@@ -37,6 +37,11 @@ RUN git \
     clone https://github.com/drewtempelmeyer/palenight.vim \
     /home/elm/.vim/pack/bundle/start/palenight
 
+# Installing Devicons for Vim
+RUN git \
+    clone https://github.com/ryanoasis/vim-devicons \
+    /home/elm/.vim/pack/bundle/start/vim-devicons
+
 # Installing OhMyZSH for the Elm user
 RUN curl \
     -fsSL \
