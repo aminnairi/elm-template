@@ -97,7 +97,7 @@ $ docker-compose run --rm elm-format --yes src
 ```
 
 Note: this is done automatically when saving edited files inside the container
-using `make vim`.
+using `vim` from the `make shell` command.
 
 ## :package: Build the Elm application
 
