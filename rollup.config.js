@@ -7,10 +7,26 @@ import { cpus } from "os"
 import serve from "rollup-plugin-serve"
 import livereload from "rollup-plugin-livereload"
 import elm from "rollup-plugin-elm"
+import bundleHtml from "rollup-plugin-bundle-html"
+import copy from "rollup-plugin-copy"
+import remove from "rollup-plugin-delete"
 
 export default {
     input: resolve(__dirname, "src", "main.js"),
     plugins: [
+        remove({
+            targets: [
+                resolve(__dirname, "public")
+            ]
+        }),
+        copy({
+            targets: [
+                {
+                    src: resolve(__dirname, "src", "assets", "**", "*"),
+                    dest: resolve(__dirname, "public")
+                }
+            ]
+        }),
         elm({
             include: resolve(__dirname, "src", "**", "*"),
             exclude: [],
@@ -19,6 +35,12 @@ export default {
                 debug: process.env.NODE_ENV === "development",
                 pathToElm: "/home/elm/.local/bin/elm"
             }
+        }),
+        bundleHtml({
+            template: resolve(__dirname, "src", "index.html"),
+            dest: resolve(__dirname, "public"),
+            filename: "index.html",
+            inject: "head"
         }),
         process.env.NODE_ENV === "development" && serve({
             // We are in a container so we don't want to open a browser
