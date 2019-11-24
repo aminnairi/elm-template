@@ -4,7 +4,7 @@
 
 ## :sparkles: Features
 
-- Shipped with Elm and all his ecosystem (reactor, format, ...).
+- Shipped with Elm and all of its ecosystem (reactor, format, ...).
 - Vim configured for Elm with syntax highlighting, asynchronous code linting,
 autoformat on save, fuzzy file matcher & tree viewer.
 - Does not requires Vim to be installed as it is living inside the container!
