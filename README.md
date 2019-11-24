@@ -109,6 +109,15 @@ $ docker-compose run --rm npm run development
 
 Note: this will generate a file called `main.js` under the `public` folder.
 
+## :building_construction: Rebuild the Docker images
+
+```console
+$ make build
+$ # or
+$ docker-compose build --force-rm --no-cache --pull --parallel
+```
+
+*Note: Only do this when you appended changes to one of the `Dockerfile` files in the [`docker`](./docker) folder.*
 
 ## :pray: Many thanks to
 
