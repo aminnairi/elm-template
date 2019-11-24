@@ -3,3 +3,6 @@
 
 # Node.js dependencies
 /node_modules
+
+# public folder
+/public
