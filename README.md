@@ -29,8 +29,18 @@ with the language in no time!*
 
 ## :rocket: Installation
 
+### HTTPS
+
 ```console
-$ git clone https://github.com/aminnairi/docker-elm my-elm-project
+$ git clone https://github.com/aminnairi/elm-template.git my-elm-project
+$ cd my-elm-project
+```
+
+### SSH
+
+```console
+$ git clone git@github.com:aminnairi/elm-template.git my-elm-project
+$ cd my-elm-project
 ```
 
 ### :floppy_disk: Install the dependencies
