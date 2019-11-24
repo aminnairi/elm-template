@@ -1,9 +1,14 @@
-.PHONY: install development production shell format
+.PHONY: install build development production shell format
 
 # make install
 install:
 	# this will install all dependencies listed in our package.json file
 	docker-compose run --rm npm install
+
+# make build
+build:
+	# rebuild the docker images in the ./docker folder
+	docker-compose build --force-rm --no-cache --pull --parallel
 
 # make development
 development:
