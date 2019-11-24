@@ -1,3 +1,4 @@
 makefile linguist-detectable=false
 *.vim linguist-detectable=false
 Dockerfile linguist-detectable=false
+/public/* linguist-detectable=false
