@@ -127,6 +127,7 @@ Note: this will generate a file called `main.js` under the `public` folder.
 - [NPM](https://github.com/npm)
 - [Node.js](https://github.com/nodejs)
 - [Oh My ZSH](https://github.com/robbyrussell/oh-my-zsh)
+- [Rollup](https://rollupjs.org/guide/en/)
 - [Vim](https://github.com/vim)
 
 [docker]: https://www.docker.com/
