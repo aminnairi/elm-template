@@ -6,6 +6,9 @@
     },
     "devDependencies": {
         "rollup": "^1.27.4",
+        "rollup-plugin-bundle-html": "^0.2.2",
+        "rollup-plugin-copy": "^3.1.0",
+        "rollup-plugin-delete": "^1.1.0",
         "rollup-plugin-elm": "^2.0.1",
         "rollup-plugin-livereload": "^1.0.4",
         "rollup-plugin-serve": "^1.0.1",
