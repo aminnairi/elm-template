@@ -51,3 +51,5 @@ WORKDIR /home/elm/src
 
 # We expose the port 8000 for the elm server
 EXPOSE 8000
+# We expose the port 35729 for the Rollup livereload plugin
+EXPOSE 35729
