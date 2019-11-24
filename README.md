@@ -17,7 +17,7 @@ next idea and let me do the configuration!
 - Configured with Rollup to let you leverage all the HTML, CSS & JavaScript ecosystem's tools while still using the power of Elm.
 - Development environment with a server and live reloading as you scale your applicaton to help you focus on your next big thing instead of the tooling.
 
-*New to Elm? I strongly advised you follow the
+*New to Elm? I strongly advise you follow the
 [Elm Bridge Curriculum](https://elmbridge.github.io/curriculum/) to get along
 with the language in no time!*
 
