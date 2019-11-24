@@ -27,7 +27,7 @@ with the language in no time!*
 - [GNU/Make][gnumake] (optional)
 - [Git][git]
 
-## :rocket: Installation
+## :two_men_holding_hands: Cloning
 
 ### HTTPS
 
@@ -43,7 +43,7 @@ $ git clone git@github.com:aminnairi/elm-template.git my-elm-project
 $ cd my-elm-project
 ```
 
-### :floppy_disk: Install the dependencies
+## :floppy_disk: Install the dependencies
 
 ```console
 $ make install
@@ -51,7 +51,7 @@ $ # or
 $ docker-compose run --rm npm install
 ```
 
-### :rocket: Start the development server
+## :rocket: Start the development server
 
 ```console
 $ make development
@@ -61,7 +61,7 @@ $ docker-compose run --rm npm run development
 
 *Note: the development server will be available at [`localhost:8000`](http://localhost:8000)*
 
-### :robot: Run any Elm command from the Elm command line interface
+## :robot: Run any Elm command from the Elm command line interface
 
 ```console
 $ doker-compose run --rm elm --version
@@ -70,7 +70,7 @@ $ doker-compose run --rm elm --version
 Where `--version` is the argument you want to pass to the `elm` command line
 interface.
 
-### :shell: Open a shell into the container
+## :shell: Open a shell into the container
 
 ```console
 $ make shell
@@ -78,7 +78,7 @@ $ # or
 $ docker-compose run --rm shell
 ```
 
-### :pencil2: Edit files with Vim within the container
+## :pencil2: Edit files with Vim within the container
 
 ```console
 $ make shell
@@ -88,7 +88,7 @@ $ dokcer-compose run --rm shell
 $ vim
 ```
 
-### :art: Manually format source-code
+## :art: Manually format source-code
 
 ```console
 $ make format
@@ -99,7 +99,7 @@ $ docker-compose run --rm elm-format --yes src
 Note: this is done automatically when saving edited files inside the container
 using `make vim`.
 
-### :package: Build the Elm application
+## :package: Build the Elm application
 
 ```console
 $ make production
